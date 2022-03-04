@@ -1,0 +1,6 @@
+.env
+/public/*
+/public-backup/*
+/node_modules
+
+rest.http
