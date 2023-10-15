@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
@@ -36,7 +36,7 @@ const Work = () => {
         // }
         setFilterWork(works.filter((work) => work?.tags.includes(item)));
       } else {
-        console.log("works", works);
+        // console.log("works", works);
         setFilterWork(works);
       }
     }, 500);

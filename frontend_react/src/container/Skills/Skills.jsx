@@ -24,36 +24,7 @@ const Skills = () => {
     });
   }, []);
 
-  console.log("experience", experience);
-
-  const components = {
-    types: {
-      block: {
-        // Ex. 1: customizing common block types
-        h1: ({ children }) => <h1 className='text-2xl py-5'>{children}</h1>,
-        h2: ({ children }) => <h2 className='text-2xl py-5'>{children}</h2>,
-        h3: ({ children }) => <h3 className='text-2xl py-5'>{children}</h3>,
-        h4: ({ children }) => <h4 className='text-2xl py-5'>{children}</h4>,
-        h5: ({ children }) => <h5 className='text-2xl py-5'>{children}</h5>,
-        span: ({ children }) => (
-          <span className='text-2xl py-5'>{children}</span>
-        ),
-        p: ({ children }) => (
-          <p className='text-2xl p-5 text-purple-700'>{children}</p>
-        ),
-        blockquote: ({ children }) => (
-          <blockquote className='border-l-purple-500'>{children}</blockquote>
-        ),
-      },
-      // image: SampleImageComponent,
-      callToAction: ({ value, isInline }) =>
-        isInline ? (
-          <a href={value.url}>{value.text}</a>
-        ) : (
-          <div className='callToAction'>{value.text}</div>
-        ),
-    },
-  };
+  // console.log("experience", experience);
 
   return (
     <>
